@@ -1,0 +1,100 @@
+ /* Se recomienda dejar un background color parecido al color de la imágen, en caso que no pueda abrir la imágen, se mostrará es el fondo; Para empezar, se usa color e image donde image puede ser una ruta local o remota, si la imágen es más pequeña, se mostrará repetidas veces, si es más grande que el contenedor, se mostrará solo lo que alcance */
+    /*  background-repeat: no-repeat; /* No se repite con no repeat */
+    /* background-repeat: repeat-x; /* Solo se repite en el eje x */
+    /* background-repeat: repeat-y; /* Solo se repite en el eje y */
+    /* background-repeat: space; /* La imágen se repite hasta cubrir todo el fondo usando espacios */
+    /* background-repeat: round; /* Se deforma para cubrir todo el espacio */
+    
+    /* background-position: center; /* La imagen se centra en x y y */
+    /* background-position: left bottom; /* Se deja la imagen abajo a la izquierda */
+    
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;    
+    
+}
+html{
+    border: 15px inset gray;
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: greenyellow;
+    background-image: url("./resources/background.jpg"); 
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+body{
+    height: 100%;
+}
+main{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+section{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #80bd9e;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: justify;
+}
+figure > figcaption{
+    margin: 0 auto;
+    text-align: center;
+    background-color: #80bd9e;
+    font-size: 0.8em;
+    width: auto;
+    padding-bottom: 20px;
+}
+
+#imgfrai{ /* Con display y margin, se centra */
+    background-image: url("https://c.tenor.com/b8o3-xPPh6MAAAAC/frailejon-ernesto.gif");
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.Audio{
+    margin-left: 50%;
+    transform: translateX(-40%);
+    margin-bottom: 20px;
+}
+.container-gif{
+    width: 700px;
+    height: 90%;
+    display: block;
+    margin: auto;
+}
+
+footer{
+    font-size: 0.8rem;
+    position: absolute;
+    color: #f98866;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.container-gif a {
+    font-size: 0.8rem;
+    display: block;
+    margin: auto;
+}
